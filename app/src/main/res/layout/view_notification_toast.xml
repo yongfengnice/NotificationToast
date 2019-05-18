@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:paddingLeft="10dp"
+  android:paddingRight="10dp">
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@drawable/bg_notificaion_toast">
+
+    <ImageView
+      android:id="@+id/icon"
+      android:layout_width="48dp"
+      android:layout_height="48dp"
+      android:layout_alignParentRight="true"
+      android:src="@drawable/ic_launcher_background"/>
+
+    <TextView
+      android:id="@+id/title"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignTop="@id/icon"
+      android:layout_toLeftOf="@id/icon"
+      android:background="@color/colorAccent"
+      android:text="I am notification title"
+      android:textSize="20sp"/>
+
+    <TextView
+      android:id="@+id/content"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignBottom="@id/icon"
+      android:layout_toLeftOf="@id/icon"
+      android:background="@color/colorAccent"
+      android:text="I am notification contentxxxxxxxxxxx"
+      android:textSize="16sp"/>
+  </RelativeLayout>
+</FrameLayout>
