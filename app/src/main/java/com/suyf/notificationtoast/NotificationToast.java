@@ -8,7 +8,6 @@ import android.os.Handler;
 import android.os.IBinder;
 import android.os.Looper;
 import android.os.Message;
-import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -20,7 +19,6 @@ import java.lang.reflect.Method;
 
 public class NotificationToast {
 
-  static String TAG = "ActivityRecord";
   private static Toast sToast;
   private static int sNotificationId;
   private static View sContentView;
@@ -60,13 +58,10 @@ public class NotificationToast {
     params.x = 0;
     params.y = 0;
     try {
-      Log.d(TAG, "showByWindowToken1: " + contentView.getParent());
       windowManager.addView(contentView, params);
-      Log.d(TAG, "showByWindowToken2: " + contentView.getParent());
       sContentView = null;
     } catch (BadTokenException e) {
       e.printStackTrace();
-      Log.d(TAG, "showByWindowToken3: " + contentView.getParent());
       windowManager.removeView(contentView);
       showByToastToken(context);
       return;
