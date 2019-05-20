@@ -1,4 +1,4 @@
-package com.suyf.notificationtoast;
+package com.suyf.notificationtoast.notification;
 
 import android.app.Notification;
 import android.app.NotificationChannel;
@@ -12,6 +12,9 @@ import android.graphics.drawable.Icon;
 import android.os.Build.VERSION;
 import android.os.Build.VERSION_CODES;
 import android.provider.MediaStore;
+
+import com.suyf.notificationtoast.PushResultActivity;
+import com.suyf.notificationtoast.R;
 
 public class NotificationFactory {
 

@@ -8,6 +8,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Toast;
 
+import com.suyf.notificationtoast.notification.NotificationFactory;
+import com.suyf.notificationtoast.toast.NotificationToast;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override

@@ -1,4 +1,4 @@
-package com.suyf.notificationtoast;
+package com.suyf.notificationtoast.toast;
 
 import android.app.NotificationManager;
 import android.content.Context;
@@ -8,6 +8,9 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.WindowManager;
 import android.widget.Toast;
+
+import com.suyf.notificationtoast.PushResultActivity;
+import com.suyf.notificationtoast.R;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
