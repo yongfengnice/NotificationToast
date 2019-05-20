@@ -1,5 +1,5 @@
 # NotificationToast
-Notification Toast
+Android Notification Toast without any device compatibility
 
 ##usage:
 NotificationToast.show(notificationId, customView);
