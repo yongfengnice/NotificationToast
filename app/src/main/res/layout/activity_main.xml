@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<LinearLayout
   xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:app="http://schemas.android.com/apk/res-auto"
-  xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
-  tools:context=".MainActivity">
+  android:gravity="center"
+  android:orientation="vertical">
 
   <Button
     android:layout_width="wrap_content"
@@ -13,10 +12,22 @@
     android:gravity="center"
     android:onClick="show_notification"
     android:text="show notification"
-    android:textAllCaps="false"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintLeft_toLeftOf="parent"
-    app:layout_constraintRight_toRightOf="parent"
-    app:layout_constraintTop_toTopOf="parent"/>
+    android:textAllCaps="false"/>
 
-</android.support.constraint.ConstraintLayout>
+  <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:onClick="show_notification2"
+    android:text="show notification2"
+    android:textAllCaps="false"/>
+
+  <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:onClick="show_second_page"
+    android:text="show second page"
+    android:textAllCaps="false"/>
+
+</LinearLayout>
